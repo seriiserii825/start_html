@@ -71,7 +71,7 @@ gulp.task('cleanmin', function (cb) {
 gulp.task('min', ['cleanmin','cssmin', 'jsmin']);
 
 gulp.task('libs', function(){
-    gulp.src('src/libs/')
+    gulp.src('src/libs/**/*.*')
         .pipe(gulp.dest('build/libs/'))
 });
 
