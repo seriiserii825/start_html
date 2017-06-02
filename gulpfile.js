@@ -30,11 +30,11 @@ gulp.task('html', function () {
 
 gulp.task('css', function () {
     gulp.src('src/less/style.less') // Выберем наш style.less
-        //.pipe(sourcemaps.init())
+        .pipe(sourcemaps.init())
         .pipe(cached('src/less/style.less'))
         .pipe(less()) // Скомпилируем
         .pipe(prefixer()) // Добавим вендорные префиксы
-        //.pipe(sourcemaps.write())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/css/'))
         .pipe(browserSync.stream());
 });
