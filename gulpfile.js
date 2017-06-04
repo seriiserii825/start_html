@@ -28,10 +28,16 @@ gulp.task('html', function () {
     // Переместим их в папку build
 });
 
+gulp.task('mail', function () {
+    gulp.src('src/mail.php') // Выберем файлы по нужному пути
+        .pipe(gulp.dest('build/'))
+        .pipe(browserSync.stream());
+    // Переместим их в папку build
+});
+
 gulp.task('css', function () {
     gulp.src('src/less/style.less') // Выберем наш style.less
         .pipe(sourcemaps.init())
-        .pipe(cached('src/less/style.less'))
         .pipe(less()) // Скомпилируем
         .pipe(prefixer()) // Добавим вендорные префиксы
         .pipe(sourcemaps.write())
@@ -119,14 +125,15 @@ gulp.task('build', [
     'js',
     'img',
     'sprite',
-    'libs'
+    'libs',
+    'mail'
 ]);
 
 gulp.task('browser-sync', function () {
 
     browserSync.init({
-        proxy: "armata.loc/build",
-        notify: false
+        proxy: "test.loc/build",
+        notify: true
     });
 });
 
@@ -139,6 +146,7 @@ gulp.task('watch', function () {
     gulp.watch('src/img/icons/*.*', ['sprite']);
     gulp.watch('src/fonts/**/*.*', ['fonts']);
     gulp.watch('src/libs/**/*.*', ['libs']);
+    gulp.watch('src/mail.php', ['mail']);
 });
 
 
