@@ -15,9 +15,21 @@ var gulp = require('gulp'),
     newer = require('gulp-newer'),
     cssmin = require('gulp-cssmin'),
     jsmin = require('gulp-jsmin'),
-    pngquant = require('imagemin-pngquant');
+    pngquant = require('imagemin-pngquant'),
     cached = require('gulp-cached');
 
+gulp.task('head', function () {
+    gulp.src('src/less/head.less') // Выберем наш style.less
+        .pipe(sourcemaps.init())
+        .pipe(less()) // Скомпилируем
+        .pipe(prefixer()) // Добавим вендорные префиксы
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('build/css/'))
+        .pipe(cssmin({showLog: true}))
+        .pipe(rename({suffix: '.min', prefix : ''}))
+        .pipe(gulp.dest('build/'))
+        .pipe(browserSync.stream());
+});
 
 gulp.task('html', function () {
     gulp.src('src/**/*.html') // Выберем файлы по нужному пути
@@ -153,6 +165,7 @@ gulp.task('browser-sync', function () {
 gulp.task('watch', function () {
     gulp.watch('src/**/*.html', ['html']);
     gulp.watch('src/less/**/*.less', ['css']);
+    gulp.watch('src/less/head.less', ['head']);
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('src/fonts/**/*.*', ['fonts']);
     gulp.watch('src/img/**/*.*', ['img']);
