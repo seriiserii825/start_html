@@ -162,7 +162,7 @@ gulp.task('build', [
 gulp.task('browser-sync', function () {
 
     browserSync.init({
-        proxy: "starthtml/build",
+        proxy: "starthtml.loc/build",
         notify: true
     });
 });
