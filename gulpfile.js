@@ -15,6 +15,7 @@ var gulp = require('gulp'),
     newer = require('gulp-newer'),
     cssmin = require('gulp-cssmin'),
     jsmin = require('gulp-jsmin'),
+    fileinclude = require('gulp-file-include'),
     pngquant = require('imagemin-pngquant'),
     cached = require('gulp-cached');
 
@@ -27,9 +28,19 @@ gulp.task('head', function () {
         .pipe(gulp.dest('build/css/'))
         .pipe(cssmin({showLog: true}))
         .pipe(rename({suffix: '.min', prefix : ''}))
-        .pipe(gulp.dest('build/'))
+        .pipe(gulp.dest('build/css/'))
         .pipe(browserSync.stream());
 });
+
+gulp.task('fileinclude', function() {
+  gulp.src(['build/index.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('build/'));
+});
+
 
 gulp.task('html', function () {
     gulp.src('src/**/*.html') // Выберем файлы по нужному пути
@@ -126,12 +137,6 @@ gulp.task('img', function () {
     // Переместим в build
 });
 
-gulp.task('png', function () {
-    gulp.src('build/img/*.png')
-        .pipe(tinypng('n3bfGZY6wU3OWNZZAIigLe444WovtR9_'))
-        .pipe(gulp.dest('build/img'));
-});
-
 gulp.task('fonts', function () {
     gulp.src('src/fonts/**/*.*') // Выберем файлы по нужному пути
         .pipe(gulp.dest('build/css/fonts'))
@@ -157,7 +162,7 @@ gulp.task('build', [
 gulp.task('browser-sync', function () {
 
     browserSync.init({
-        proxy: "test.loc/build",
+        proxy: "starthtml/build",
         notify: true
     });
 });
