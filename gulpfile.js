@@ -15,6 +15,7 @@ var gulp = require('gulp'),
     newer = require('gulp-newer'),
     cssmin = require('gulp-cssmin'),
     jsmin = require('gulp-jsmin'),
+    pngquant = require('imagemin-pngquant');
     cached = require('gulp-cached');
 
 
@@ -42,6 +43,9 @@ gulp.task('css', function () {
         .pipe(prefixer()) // Добавим вендорные префиксы
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/css/'))
+        .pipe(cssmin({showLog: true}))
+        .pipe(rename({suffix: '.min', prefix : ''}))
+        .pipe(gulp.dest('build/css/'))
         .pipe(browserSync.stream());
 });
 
@@ -50,15 +54,18 @@ gulp.task('js', function () {
         .pipe(cached('src/js/*.js'))
         .pipe(rigger())
         .pipe(sourcemaps.init())
-        .pipe(uglify())
         .pipe(sourcemaps.write())
+        .pipe(gulp.dest('build/js'))
+        .pipe(jsmin())
+        .pipe(uglify())
+        .pipe(rename({suffix: '.min', prefix : ''}))
         .pipe(gulp.dest('build/js'))
         .pipe(browserSync.stream());
 });
 
 gulp.task('cssmin', function () {
     gulp.src('src/min/css/*.css')
-        .pipe(cssmin())
+        .pipe(cssmin({showLog: true}))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('src/min/css-min/'));
 });
@@ -96,7 +103,13 @@ gulp.task('sprite', function () {
 gulp.task('img', function () {
     gulp.src('src/img/**/*.*') // Выберем наши картинки
         .pipe(newer('build/img'))
-        .pipe(imagemin())
+        .pipe(imagemin({
+            verbose: true,
+            interlaced: true,
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+            }))
         .pipe(gulp.dest('build/img/'));
     // Переместим в build
 });
