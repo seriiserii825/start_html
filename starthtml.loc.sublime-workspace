@@ -523,7 +523,7 @@
 			"file": "gulpfile.js",
 			"settings":
 			{
-				"buffer_size": 5598,
+				"buffer_size": 5559,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -783,8 +783,6 @@
 	"expanded_folders":
 	[
 		"/D/WEB/OpenServer/domains/starthtml.loc",
-		"/D/WEB/OpenServer/domains/starthtml.loc/build",
-		"/D/WEB/OpenServer/domains/starthtml.loc/src",
 		"/D/WEB/OpenServer/domains/starthtml.loc/src/libs"
 	],
 	"file_history":
@@ -1103,7 +1101,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1112,15 +1110,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5598,
+						"buffer_size": 5559,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4738,
-								4738
+								431,
+								431
 							]
 						],
 						"settings":
@@ -1132,27 +1130,12 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										4737,
-										4738
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/single_quote.png",
-										"brackethighlighter.default"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										4732,
-										4733
-									]
 								},
 								"unmatched":
 								{
@@ -1225,10 +1208,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2606.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1244,8 +1227,8 @@
 						"selection":
 						[
 							[
-								598,
-								598
+								1102,
+								1102
 							]
 						],
 						"settings":
@@ -1259,8 +1242,8 @@
 								{
 									"1":
 									[
-										598,
-										599
+										1101,
+										1102
 									]
 								},
 								"icon":
@@ -1275,8 +1258,8 @@
 								{
 									"1":
 									[
-										581,
-										582
+										1090,
+										1091
 									]
 								},
 								"unmatched":
@@ -1352,7 +1335,7 @@
 						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
