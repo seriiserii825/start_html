@@ -18,7 +18,7 @@ var gulp = require('gulp'),
     cached = require('gulp-cached');
 
 gulp.task('head', function () {
-    gulp.src('src/less/head.less') // Выберем наш style.less
+    gulp.src('src/head.less') // Выберем наш style.less
         .pipe(sourcemaps.init())
         .pipe(less()) // Скомпилируем
         .pipe(prefixer()) // Добавим вендорные префиксы
