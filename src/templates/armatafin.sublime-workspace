@@ -519,23 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/D/Сourses/Webdesign-master/Джедай верстки 5/Материалы/_dj5/_ready_html/app/index.html",
-			"settings":
-			{
-				"buffer_size": 49574,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/D/WEB/OpenServer/domains/ArmataFin/index.html",
-			"settings":
-			{
-				"buffer_size": 1813,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -544,10 +527,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "w",
+		"height": 222.0,
+		"last_filter": "remov",
 		"selected_items":
 		[
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"lorem",
+				"LoremIpsum: (5) a bit"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"w",
 				"W3C Validators: Validate HTML5"
@@ -567,10 +562,6 @@
 			[
 				"remove",
 				"Package Control: Remove Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"disable",
@@ -773,20 +764,31 @@
 	},
 	"expanded_folders":
 	[
-		"/D/WEB/OpenServer/domains/ArmataFin",
-		"/D/WEB/OpenServer/domains/ArmataFin/src"
+		"/D/WEB/OpenServer/domains/ArmataFin"
 	],
 	"file_history":
 	[
+		"/D/WEB/OpenServer/domains/starthtml.loc/src/less/head.less",
+		"/D/WEB/OpenServer/domains/starthtml.loc/src/less/imports/base.less",
+		"/D/WEB/OpenServer/domains/starthtml.loc/src/templates/head.html",
+		"/D/Сourses/Webdesign-master/Джедай верстки 5/Материалы/_dj5/_ready_html/app/index.html",
+		"/D/WEB/OpenServer/domains/starthtml.loc/src/templates/end.html",
+		"/D/WEB/OpenServer/domains/starthtml.loc/build/index.html",
+		"/D/WEB/OpenServer/domains/starthtml.loc/src/header.less",
+		"/D/WEB/OpenServer/domains/starthtml.loc/package.json",
 		"/D/WEB/OpenServer/domains/start_html/src/templates/head.html",
-		"/D/WEB/OpenServer/domains/start_html/gulpfile.js",
 		"/D/WEB/OpenServer/domains/start_html/src/header.less",
+		"/D/WEB/OpenServer/domains/start_html/build/index.html",
+		"/D/WEB/OpenServer/domains/start_html/gulpfile.js",
+		"/D/WEB/OpenServer/domains/start_html/package.json",
+		"/D/WEB/OpenServer/domains/start_html/new/index.html",
+		"/D/WEB/OpenServer/domains/start_html/build/css/head.min.css",
+		"/D/WEB/OpenServer/domains/start_html/src/index.html",
+		"/D/WEB/OpenServer/domains/start_html/index.html",
 		"/D/WEB/OpenServer/domains/start_html/src/less/style.less",
 		"/D/WEB/OpenServer/domains/start_html/src/templates/title.html",
 		"/D/WEB/OpenServer/domains/start_html/.bowerrc",
-		"/D/WEB/OpenServer/domains/start_html/package.json",
 		"/D/WEB/OpenServer/domains/start_html/src/less/head.less",
-		"/D/WEB/OpenServer/domains/start_html/src/index.html",
 		"/D/WEB/OpenServer/domains/start_html/src/js/custom.js",
 		"/D/WEB/OpenServer/domains/start_html/build/css/style.min.css",
 		"/D/WEB/OpenServer/domains/start_html/build/css/style.css",
@@ -893,19 +895,7 @@
 		"/C/Users/serii/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter/Afterglow-markdown (SL).tmTheme",
 		"/C/Users/serii/AppData/Roaming/Sublime Text 3/Installed Packages/Theme - Afterglow.sublime-package",
 		"/D/WEB/OpenServer/domains/Armata.loc/src/index.html",
-		"/C/Users/serii/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/less/pages/section_8.less",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/js/custom.js",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/less/pages/footer.less",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/html/section_8.html",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/html/section_6.html",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/less/pages/section_6.less",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/templates/end.html",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/less/pages/section_4.less",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/html/section_4.html",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/img/big_arrow.svg",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/html/section_5.html",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/img/big_arrow_first.svg"
+		"/C/Users/serii/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
 	],
 	"find":
 	{
@@ -1092,239 +1082,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/D/Сourses/Webdesign-master/Джедай верстки 5/Материалы/_dj5/_ready_html/app/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 49574,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								47818,
-								47554
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Afterglow-markdown (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 21530.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/WEB/OpenServer/domains/ArmataFin/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1813,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1055,
-								1055
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										1012,
-										1016
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/tag.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										1012,
-										1016
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Afterglow-markdown (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1393,6 +1152,22 @@
 		"selected_items":
 		[
 			[
+				"head",
+				"src\\templates\\head.html"
+			],
+			[
+				"base.less",
+				"src\\less\\imports\\base.less"
+			],
+			[
+				"end.html",
+				"src\\templates\\end.html"
+			],
+			[
+				"head.ht",
+				"src\\templates\\head.html"
+			],
+			[
 				"gulpl",
 				"gulpfile.js"
 			],
@@ -1413,10 +1188,6 @@
 				"src\\templates\\title.html"
 			],
 			[
-				"head",
-				"src\\templates\\head.html"
-			],
-			[
 				"end",
 				"src\\templates\\end.html"
 			],
@@ -1435,10 +1206,6 @@
 			[
 				"gul",
 				"gulpfile.js"
-			],
-			[
-				"head.ht",
-				"src\\templates\\head.html"
 			],
 			[
 				"heade",
@@ -1613,10 +1380,6 @@
 				"src\\html\\section_8.html"
 			],
 			[
-				"end.html",
-				"src\\templates\\end.html"
-			],
-			[
 				"footer",
 				"src\\html\\footer.html"
 			],
@@ -1707,10 +1470,6 @@
 			[
 				"style.css",
 				"build\\css\\style.css"
-			],
-			[
-				"base.less",
-				"src\\less\\imports\\base.less"
 			],
 			[
 				"css/style.",
