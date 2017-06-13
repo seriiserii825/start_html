@@ -15,6 +15,7 @@ var gulp = require('gulp'),
     jsmin = require('gulp-jsmin'),
     fileinclude = require('gulp-file-include'),
     pngquant = require('imagemin-pngquant'),
+    svgmin = require('gulp-svgmin'),
     cached = require('gulp-cached');
 
 gulp.task('head', function () {
@@ -121,7 +122,18 @@ gulp.task('sprite', function () {
     sprite.css.pipe(gulp.dest('src/less/imports/')).pipe(browserSync.stream());
 });
 
-gulp.task('img', function () {
+gulp.task('svg', function () {
+    return gulp.src('src/img/**/*.svg')
+        .pipe(newer('build/img'))    
+        .pipe(svgmin({
+            js2svg: {
+                pretty: true
+            }
+        }))
+        .pipe(gulp.dest('build/img/'))
+});
+
+gulp.task('img', ['svg'], function () {
     gulp.src('src/img/**/*.*') // Выберем наши картинки
         .pipe(newer('build/img'))
         .pipe(imagemin({
