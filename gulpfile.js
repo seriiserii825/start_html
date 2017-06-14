@@ -9,17 +9,48 @@ var gulp = require('gulp'),
     spritesmith = require('gulp.spritesmith'),
     sourcemaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync').create(),
+    tinypng = require('gulp-tinypng'),
+    image = require('gulp-image'),
     imagemin = require('gulp-imagemin'),
     newer = require('gulp-newer'),
     cssmin = require('gulp-cssmin'),
     jsmin = require('gulp-jsmin'),
-    fileinclude = require('gulp-file-include'),
     pngquant = require('imagemin-pngquant'),
+    fileinclude = require('gulp-file-include'),
     svgmin = require('gulp-svgmin'),
-    cached = require('gulp-cached');
+    cached = require('gulp-cached'),
+    filter    = require('gulp-filter'),
+    svg2png   = require('gulp-svg2png'),
+    svgSprite = require("gulp-svg-sprites");
 
+
+
+/*svg-sprites
+ ===============================*/ 
+gulp.task('sprite-svg', function () {
+    return gulp.src('src/img/icons-svg/*.svg')
+        .pipe(svgSprite({
+            cssFile: "../css/sprite-svg.css",
+            svgPath: "../img/svg/sprite.svg",
+            pngPath: "../img/svg/sprite.png"
+            }))
+        .pipe(gulp.dest("build/img/")) // Write the sprite-sheet + CSS + Preview 
+        .pipe(filter("**/*.svg"))  // Filter out everything except the SVG file 
+        .pipe(svg2png())           // Create a PNG 
+        .pipe(gulp.dest('build/img/'));
+});
+
+gulp.task('svgsprite', ['sprite-svg'], function(){
+    return gulp.src('build/css/sprite-svg.css')
+        .pipe(cssmin({showLog: true}))
+        .pipe(rename({suffix: '.min', prefix : ''}))
+        .pipe(gulp.dest('build/css/'));
+    });
+
+/*head
+===============================*/
 gulp.task('head', function () {
-    gulp.src('src/head.less') // Выберем наш style.less
+    gulp.src('src/less/head.less') // Выберем наш style.less
         .pipe(sourcemaps.init())
         .pipe(less()) // Скомпилируем
         .pipe(prefixer()) // Добавим вендорные префиксы
@@ -27,20 +58,12 @@ gulp.task('head', function () {
         .pipe(gulp.dest('build/css/'))
         .pipe(cssmin({showLog: true}))
         .pipe(rename({suffix: '.min', prefix : ''}))
-        .pipe(gulp.dest('build/css/'))
+        .pipe(gulp.dest('build/'))
         .pipe(browserSync.stream());
 });
 
-gulp.task('fileinclude', function() {
-  gulp.src(['build/index.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest('build/'));
-});
-
-
+/*html
+===============================*/
 gulp.task('html', function () {
     gulp.src('src/**/*.html') // Выберем файлы по нужному пути
         .pipe(sourcemaps.init())
@@ -51,6 +74,8 @@ gulp.task('html', function () {
     // Переместим их в папку build
 });
 
+/*mail.php
+===============================*/
 gulp.task('mail', function () {
     gulp.src('src/mail.php') // Выберем файлы по нужному пути
         .pipe(gulp.dest('build/'))
@@ -58,6 +83,8 @@ gulp.task('mail', function () {
     // Переместим их в папку build
 });
 
+/*css
+===============================*/
 gulp.task('css', function () {
     gulp.src('src/less/style.less') // Выберем наш style.less
         .pipe(sourcemaps.init())
@@ -65,12 +92,15 @@ gulp.task('css', function () {
         .pipe(prefixer()) // Добавим вендорные префиксы
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/css/'))
+        .pipe(browserSync.stream())
         .pipe(cssmin({showLog: true}))
         .pipe(rename({suffix: '.min', prefix : ''}))
-        .pipe(gulp.dest('build/css/'))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest('build/css/'));
+        
 });
 
+/*js
+===============================*/
 gulp.task('js', function () {
     gulp.src('src/js/*.js') // Выберем файлы по нужному пути
         .pipe(cached('src/js/*.js'))
@@ -85,6 +115,8 @@ gulp.task('js', function () {
         .pipe(browserSync.stream());
 });
 
+/*min
+===============================*/
 gulp.task('cssmin', function () {
     gulp.src('src/min/css/*.css')
         .pipe(cssmin({showLog: true}))
@@ -105,11 +137,15 @@ gulp.task('cleanmin', function (cb) {
 
 gulp.task('min', ['cleanmin','cssmin', 'jsmin']);
 
+/*libs
+===============================*/
 gulp.task('libs', function(){
     gulp.src('src/libs/**/*.*')
         .pipe(gulp.dest('build/libs/'))
 });
 
+/*sprite png
+===============================*/
 gulp.task('sprite', function () {
     var sprite = gulp.src('src/img/icons/*.png').pipe(spritesmith({
         imgName: '../img/sprite.png',
@@ -122,9 +158,10 @@ gulp.task('sprite', function () {
     sprite.css.pipe(gulp.dest('src/less/imports/')).pipe(browserSync.stream());
 });
 
+/*svg
+===============================*/
 gulp.task('svg', function () {
-    return gulp.src('src/img/**/*.svg')
-        .pipe(newer('build/img'))    
+    return gulp.src('src/img/*.svg')
         .pipe(svgmin({
             js2svg: {
                 pretty: true
@@ -133,8 +170,10 @@ gulp.task('svg', function () {
         .pipe(gulp.dest('build/img/'))
 });
 
+/*img
+===============================*/
 gulp.task('img', ['svg'], function () {
-    gulp.src('src/img/**/*.*') // Выберем наши картинки
+    gulp.src('src/img/**/*.{jpg,png}') // Выберем наши картинки
         .pipe(newer('build/img'))
         .pipe(imagemin({
             verbose: true,
@@ -147,6 +186,8 @@ gulp.task('img', ['svg'], function () {
     // Переместим в build
 });
 
+/*fonts
+===============================*/
 gulp.task('fonts', function () {
     gulp.src('src/fonts/**/*.*') // Выберем файлы по нужному пути
         .pipe(gulp.dest('build/css/fonts'))
@@ -158,6 +199,8 @@ gulp.task('clean', function (cb) {
     rimraf('build/', cb);
 });
 
+/*build
+===============================*/
 gulp.task('build', [
     'html',
     'css',
@@ -169,10 +212,12 @@ gulp.task('build', [
     'mail'
 ]);
 
+/*browser-sync
+===============================*/
 gulp.task('browser-sync', function () {
 
     browserSync.init({
-        proxy: "starthtml.loc/build",
+        proxy: "test.loc/build",
         notify: true
     });
 });
@@ -187,6 +232,7 @@ gulp.task('watch', function () {
     gulp.watch('src/img/icons/*.*', ['sprite']);
     gulp.watch('src/fonts/**/*.*', ['fonts']);
     gulp.watch('src/libs/**/*.*', ['libs']);
+    gulp.watch('src/img/icons-svg/*.svg', ['svgsprite']);
     gulp.watch('src/mail.php', ['mail']);
 });
 
