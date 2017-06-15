@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"sprite-svg",
+				"sprite-svg.css\t(gulpfile.js)"
+			],
+			[
+				"anima",
+				"animation-iteration-count"
+			],
+			[
+				"animat",
+				"animation-duration"
+			],
+			[
+				"ad",
+				"animation-delay"
+			],
+			[
+				"toggle",
+				"toggleClass\t.toggleClass()"
+			],
+			[
+				"translate",
+				"translateX($1)"
+			],
+			[
+				"button",
+				"button-wrap\t(index.html)"
+			],
+			[
+				"svg",
+				"svg-letter"
+			],
+			[
+				"animation",
+				"animation-direction"
+			],
+			[
+				"img",
+				"img-wrap\t(index.html)"
+			],
+			[
+				"header",
+				"header-main\t(index.html)"
+			],
+			[
+				"image",
+				"image-popup"
+			],
+			[
+				"picture",
+				"picture-list\t(index.html)"
+			],
+			[
 				"jq",
 				"jq\tjquery"
 			],
@@ -86,10 +138,6 @@
 			[
 				"clear",
 				"clearfix\t(base.less)"
-			],
-			[
-				"button",
-				"button-wrap"
 			],
 			[
 				"ro",
@@ -212,14 +260,6 @@
 				"translateX($1)"
 			],
 			[
-				"animation",
-				"animation-delay"
-			],
-			[
-				"anima",
-				"animated〔function〕"
-			],
-			[
 				"scroll",
 				"scrollTop\t.scrollTop()"
 			],
@@ -234,10 +274,6 @@
 			[
 				"main",
 				"main-menu\t(footer.html)"
-			],
-			[
-				"img",
-				"img-wrap\t(section_8.html)"
 			],
 			[
 				"show",
@@ -298,10 +334,6 @@
 			[
 				"trans",
 				"translate"
-			],
-			[
-				"header",
-				"header-section"
 			],
 			[
 				"rale",
@@ -482,66 +514,34 @@
 			[
 				"jquery",
 				"jqueryScrollSpeed"
-			],
-			[
-				"get_tema",
-				"get_template_directory_uri"
-			],
-			[
-				"wp_equeue_",
-				"wp_enqueue_script"
-			],
-			[
-				"wp_enquer",
-				"wp_enqueue_scripts"
-			],
-			[
-				"wp_e",
-				"wp_enqueue_style"
-			],
-			[
-				"boot",
-				"bootstrap\t(index.php)"
-			],
-			[
-				"font",
-				"font-awesome\t(index.php)"
-			],
-			[
-				"wp_eque",
-				"wp_enqueue_script"
-			],
-			[
-				"user",
-				"user43798_serii\t(wp-config.php)"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/templates/head.html",
+			"file": "head.html",
 			"settings":
 			{
-				"buffer_size": 1383,
+				"buffer_size": 1325,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "gulpfile.js",
+			"file": "/D/WEB/OpenServer/domains/Jurdis/package.json",
+			"settings":
+			{
+				"buffer_size": 1021,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/WEB/OpenServer/domains/Jurdis/gulpfile.js",
 			"settings":
 			{
 				"buffer_size": 7226,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "build/css/sprite-svg.css",
-			"settings":
-			{
-				"buffer_size": 457,
 				"line_ending": "Unix"
 			}
 		}
@@ -553,21 +553,25 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 222.0,
-		"last_filter": "remov",
+		"height": 400.0,
+		"last_filter": "instal",
 		"selected_items":
 		[
 			[
-				"remov",
-				"Package Control: Remove Package"
-			],
-			[
-				"lorem",
-				"LoremIpsum: (5) a bit"
+				"instal",
+				"Package Control: Install Package"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show All Errors"
 			],
 			[
 				"w",
@@ -600,10 +604,6 @@
 			[
 				"inst",
 				"Package Control: Install Package"
-			],
-			[
-				"package",
-				"Package Control: Remove Package"
 			],
 			[
 				"jshin",
@@ -664,10 +664,6 @@
 			[
 				"emmet",
 				"Emmet: Wrap With Abbreviation"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"disa",
@@ -790,44 +786,43 @@
 	},
 	"expanded_folders":
 	[
-		"/D/WEB/OpenServer/domains/starthtml.loc",
-		"/D/WEB/OpenServer/domains/starthtml.loc/build",
-		"/D/WEB/OpenServer/domains/starthtml.loc/build/css",
-		"/D/WEB/OpenServer/domains/starthtml.loc/build/img"
+		"/D/WEB/OpenServer/domains/Jurdis",
+		"/D/WEB/OpenServer/domains/Jurdis/src/templates"
 	],
 	"file_history":
 	[
-		"/D/WEB/OpenServer/domains/starthtml.loc/src/less/head.less",
-		"/D/WEB/OpenServer/domains/starthtml.loc/src/less/imports/base.less",
-		"/D/WEB/OpenServer/domains/starthtml.loc/src/templates/head.html",
-		"/D/Сourses/Webdesign-master/Джедай верстки 5/Материалы/_dj5/_ready_html/app/index.html",
-		"/D/WEB/OpenServer/domains/starthtml.loc/src/templates/end.html",
-		"/D/WEB/OpenServer/domains/starthtml.loc/build/index.html",
-		"/D/WEB/OpenServer/domains/starthtml.loc/src/header.less",
-		"/D/WEB/OpenServer/domains/starthtml.loc/package.json",
-		"/D/WEB/OpenServer/domains/start_html/src/templates/head.html",
-		"/D/WEB/OpenServer/domains/start_html/src/header.less",
-		"/D/WEB/OpenServer/domains/start_html/build/index.html",
-		"/D/WEB/OpenServer/domains/start_html/gulpfile.js",
-		"/D/WEB/OpenServer/domains/start_html/package.json",
-		"/D/WEB/OpenServer/domains/start_html/new/index.html",
-		"/D/WEB/OpenServer/domains/start_html/build/css/head.min.css",
-		"/D/WEB/OpenServer/domains/start_html/src/index.html",
-		"/D/WEB/OpenServer/domains/start_html/index.html",
-		"/D/WEB/OpenServer/domains/start_html/src/less/style.less",
-		"/D/WEB/OpenServer/domains/start_html/src/templates/title.html",
-		"/D/WEB/OpenServer/domains/start_html/.bowerrc",
-		"/D/WEB/OpenServer/domains/start_html/src/less/head.less",
-		"/D/WEB/OpenServer/domains/start_html/src/js/custom.js",
-		"/D/WEB/OpenServer/domains/start_html/build/css/style.min.css",
-		"/D/WEB/OpenServer/domains/start_html/build/css/style.css",
-		"/D/WEB/OpenServer/domains/start_html/build/js/custom.js",
-		"/D/WEB/OpenServer/domains/start_html/build/js/custom.min.js",
-		"/D/WEB/OpenServer/domains/test.loc/build/libs/jquery.stellar/README.md",
+		"/D/Сourses/Среда Знаний/[Школа современных технологий] Среда знаний. CSS-препроцессор LESS - 2015/ek_less_source/css/styles.css",
+		"/D/WEB/OpenServer/domains/test.loc/build/css/sprite-svg.css",
+		"/D/Сourses/Среда Знаний/[Школа современных технологий] Среда знаний. CSS-препроцессор LESS - 2015/ek_less_source/css/lib.less",
+		"/D/Сourses/Среда Знаний/[Школа современных технологий] Среда знаний. CSS-препроцессор LESS - 2015/ek_less_source/css/styles.less",
+		"/D/Сourses/Среда Знаний/[Школа современных технологий] Среда знаний. CSS-препроцессор LESS - 2015/ek_less_source/index.html",
 		"/D/WEB/OpenServer/domains/test.loc/src/templates/end.html",
+		"/D/WEB/OpenServer/domains/test.loc/build/img/svg/defs.svg",
 		"/D/WEB/OpenServer/domains/test.loc/src/templates/head.html",
-		"/C/Users/serii/AppData/Roaming/Sublime Text 3/Packages/User/jquery.sublime-snippet",
+		"/D/WEB/OpenServer/domains/test.loc/build/css/sprite-svg.min.css",
+		"/D/WEB/OpenServer/domains/test.loc/build/img/svg/svg/sprite.svg",
+		"/D/WEB/OpenServer/domains/test.loc/build/img/svg/css/sprite.css",
+		"/D/WEB/OpenServer/domains/test.loc/build/img/css/sprite.css",
+		"/D/WEB/OpenServer/domains/test.loc/build/img/svg/sprite.html",
+		"/D/WEB/OpenServer/domains/test.loc/build/img/letter-03.svg",
+		"/D/WEB/OpenServer/domains/test.loc/build/img/letter-02.svg",
+		"/D/WEB/OpenServer/domains/test.loc/build/img/letter-01.svg",
+		"/D/WEB/OpenServer/domains/test.loc/src/img/letter-01.svg",
+		"/D/WEB/OpenServer/domains/test.loc/src/img/letter-02.svg",
+		"/D/WEB/OpenServer/domains/test.loc/src/img/letter-03.svg",
+		"/D/WEB/OpenServer/domains/test.loc/src/less/style.less",
+		"/C/Users/serii/Downloads/pageloader-add-on/pageloader/jquery.js",
+		"/D/WEB/OpenServer/domains/test.loc/src/img/camp.svg",
+		"/D/WEB/OpenServer/domains/test.loc/src/js/custom.js",
+		"/D/WEB/OpenServer/domains/test.loc/gulpfile.js",
 		"/D/WEB/OpenServer/domains/test.loc/src/less/imports/base.less",
+		"/C/Users/serii/Downloads/pageloader-add-on/pageloader/pageloader.css",
+		"/C/Users/serii/Downloads/pageloader-add-on/pageloader/pageloader.js",
+		"/D/WEB/OpenServer/domains/test.loc/src/view.html",
+		"/D/WEB/OpenServer/domains/test.loc/src/_head.less",
+		"/D/WEB/OpenServer/domains/test.loc/src/var.html",
+		"/D/WEB/OpenServer/domains/test.loc/build/libs/jquery.stellar/README.md",
+		"/C/Users/serii/AppData/Roaming/Sublime Text 3/Packages/User/jquery.sublime-snippet",
 		"/D/WEB/OpenServer/domains/ProKurs/gulpfile.js",
 		"/D/WEB/OpenServer/domains/ProKurs/src/templates/head.html",
 		"/D/WEB/OpenServer/domains/ProKurs/src/js/custom.js",
@@ -873,6 +868,7 @@
 		"/D/WEB/OpenServer/domains/ProKurs/build/css/style.css",
 		"/D/WEB/OpenServer/domains/ProKurs/src/less/imports/fonts.less",
 		"/D/WEB/OpenServer/domains/start_html/src/less/imports/base.less",
+		"/D/WEB/OpenServer/domains/start_html/gulpfile.js",
 		"/D/cloud@mail.ru/Cloud/Fonts/CleanvertisingLight/CleanvertisingLight.css",
 		"/D/cloud@mail.ru/Cloud/Fonts/Roboto/RobotoBold/RobotoBold.css",
 		"/D/cloud@mail.ru/Cloud/Fonts/Roboto/RobotoRegular/RobotoRegular.css",
@@ -881,6 +877,7 @@
 		"/D/WEB/OpenServer/domains/ProKurs/psd/icomoon/style.less",
 		"/D/WEB/OpenServer/domains/ProKurs/build/libs/icomoon/icon-moon.css",
 		"/D/WEB/OpenServer/domains/ProKurs/src/templates/title.html",
+		"/D/WEB/OpenServer/domains/start_html/src/less/style.less",
 		"/D/Сourses/Webdesign-master/Джедай верстки 2/#2. Адаптивная HTML верстка на примере образовательного Landing Page/_clean_sass/_clean_sass/index.html",
 		"/D/WEB/OpenServer/domains/ProKurs/.gitignore",
 		"/D/WEB/OpenServer/domains/ProKurs/src/libs/icomoon/style.css",
@@ -921,10 +918,7 @@
 		"/D/WEB/OpenServer/domains/Armata.loc/src/html/second-section.html",
 		"/D/WEB/OpenServer/domains/Armata.loc/src/html/header.html",
 		"/D/WEB/OpenServer/domains/Armata.loc/src/less/imports/base.less",
-		"/C/Users/serii/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter/Afterglow-markdown (SL).tmTheme",
-		"/C/Users/serii/AppData/Roaming/Sublime Text 3/Installed Packages/Theme - Afterglow.sublime-package",
-		"/D/WEB/OpenServer/domains/Armata.loc/src/index.html",
-		"/C/Users/serii/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+		"/C/Users/serii/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter/Afterglow-markdown (SL).tmTheme"
 	],
 	"find":
 	{
@@ -943,16 +937,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			".bebas-bold;",
-			".bebas;",
-			"@textRed",
-			".robotocondensed;",
-			"@bgRed",
-			"@textBlack",
-			"@bgWhite",
-			"@bgGray",
-			"@textWhite",
-			".bebas;",
+			"@lightColor",
+			"@darkColor",
+			"@topmargin",
+			"@menuHeight",
+			"svg-letter",
+			"small/",
+			"big",
+			"<a href=\"",
 			"http://.jpg",
 			"jquery.stellar.html",
 			"sectoin",
@@ -1070,7 +1062,9 @@
 			"\t\t\n",
 			"ceild",
 			"floor",
-			"strong"
+			"strong",
+			"post_features",
+			"features"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1078,12 +1072,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			"",
-			"red",
-			"",
-			"red",
-			"#000",
-			"#fff",
 			"section_3",
 			"<?php bloginfo('template_url'); ?>/img/",
 			"utf8",
@@ -1111,24 +1099,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/templates/head.html",
+					"file": "head.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1383,
+						"buffer_size": 1325,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								770,
-								770
+								463,
+								463
 							]
 						],
 						"settings":
@@ -1140,12 +1128,27 @@
 							{
 								"close":
 								{
+									"1":
+									[
+										476,
+										477
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.default"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										443,
+										444
+									]
 								},
 								"unmatched":
 								{
@@ -1153,56 +1156,56 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -1220,36 +1223,29 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 1,
-					"file": "gulpfile.js",
-					"semi_transient": false,
+					"file": "/D/WEB/OpenServer/domains/Jurdis/package.json",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 7226,
+						"buffer_size": 1021,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1251,
-								1251
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"auto_complete": false,
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
@@ -1257,8 +1253,8 @@
 								{
 									"1":
 									[
-										1260,
-										1261
+										1019,
+										1020
 									]
 								},
 								"icon":
@@ -1273,8 +1269,8 @@
 								{
 									"1":
 									[
-										1109,
-										1110
+										0,
+										1
 									]
 								},
 								"unmatched":
@@ -1283,56 +1279,170 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Theme - Afterglow/Prefs/Langs/npm JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "/D/WEB/OpenServer/domains/Jurdis/gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2881,
+								2881
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -1348,119 +1458,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 1134.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "build/css/sprite-svg.css",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 457,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								457,
-								457
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Afterglow-markdown (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1525,7 +1526,7 @@
 		"height": 118.0
 	},
 	"pinned_build_system": "",
-	"project": "starthtml.loc.sublime-project",
+	"project": "jurdis.sublime-project",
 	"replace":
 	{
 		"height": 48.0
@@ -1538,48 +1539,32 @@
 		"selected_items":
 		[
 			[
-				"head",
-				"src\\templates\\head.html"
-			],
-			[
-				"base.less",
-				"src\\less\\imports\\base.less"
-			],
-			[
-				"end.html",
-				"src\\templates\\end.html"
-			],
-			[
-				"head.ht",
-				"src\\templates\\head.html"
-			],
-			[
-				"gulpl",
+				"gulp",
 				"gulpfile.js"
-			],
-			[
-				"style.less",
-				"src\\less\\style.less"
-			],
-			[
-				"index.",
-				"src\\index.html"
-			],
-			[
-				"packa",
-				"package.json"
-			],
-			[
-				"title",
-				"src\\templates\\title.html"
 			],
 			[
 				"end",
 				"src\\templates\\end.html"
 			],
 			[
+				"head",
+				"src\\templates\\head.html"
+			],
+			[
+				"custom",
+				"src\\js\\custom.js"
+			],
+			[
+				"style.",
+				"src\\less\\style.less"
+			],
+			[
 				"base",
 				"src\\less\\imports\\base.less"
+			],
+			[
+				"head.html",
+				"src\\templates\\head.html"
 			],
 			[
 				"custom.js",
@@ -1594,16 +1579,16 @@
 				"gulpfile.js"
 			],
 			[
+				"head.ht",
+				"src\\templates\\head.html"
+			],
+			[
 				"heade",
 				"src\\html\\header.html"
 			],
 			[
 				"bwoer",
 				"bower.json"
-			],
-			[
-				"custom",
-				"src\\js\\custom.js"
 			],
 			[
 				"tizer",
@@ -1616,10 +1601,6 @@
 			[
 				"profi",
 				"src\\html\\profi.html"
-			],
-			[
-				"gulp",
-				"gulpfile.js"
 			],
 			[
 				"profi.less",
@@ -1690,10 +1671,6 @@
 				"src\\templates\\end.html"
 			],
 			[
-				"style.",
-				"src\\less\\style.less"
-			],
-			[
 				"iconmoo",
 				"src\\libs\\icomoon\\icon-moon.css"
 			],
@@ -1734,10 +1711,6 @@
 				"src\\less\\pages\\services.less"
 			],
 			[
-				"head.html",
-				"src\\templates\\head.html"
-			],
-			[
 				"servic",
 				"src\\html\\services.html"
 			],
@@ -1764,6 +1737,10 @@
 			[
 				"section_8",
 				"src\\html\\section_8.html"
+			],
+			[
+				"end.html",
+				"src\\templates\\end.html"
 			],
 			[
 				"footer",
@@ -1856,6 +1833,14 @@
 			[
 				"style.css",
 				"build\\css\\style.css"
+			],
+			[
+				"base.less",
+				"src\\less\\imports\\base.less"
+			],
+			[
+				"index.",
+				"src\\index.html"
 			],
 			[
 				"css/style.",
@@ -2074,7 +2059,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 303.0,
+	"side_bar_width": 358.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
