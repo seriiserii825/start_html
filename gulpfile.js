@@ -222,6 +222,7 @@ gulp.task('build', [
 	'js',
 	'img',
 	'sprite',
+	'head',
 	'libs',
 	'mail',
 	'fonts-less'
