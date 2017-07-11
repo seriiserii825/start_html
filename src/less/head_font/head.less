@@ -1,4 +1,42 @@
-body{
-	color: red;
-	background: #666;
+@import "../imports/variables.less";
+@import "../imports/_mixins.less";
+body {
+  margin: 0;
+  padding: 0;
+  font-family:"Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  background: #fff;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.container{
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 960px;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+/*titles*/
+h1,
+h2,
+h3,
+h4{
+  margin: 0;
+  padding: 0;
 }
