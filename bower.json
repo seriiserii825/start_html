@@ -23,7 +23,7 @@
     "animate.css": "animation.css#^3.5.2",
     "html5shiv": "^3.7.3",
     "respond": "^1.4.2",
-    "equalheight": "^1.0.1",
-    "modernizr": "^3.5.0"
+    "modernizr": "^3.5.0",
+    "jQuery.equalHeights": "https://github.com/mattbanks/jQuery.equalHeights.git#^1.5.2"
   }
 }
