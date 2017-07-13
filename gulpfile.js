@@ -77,10 +77,10 @@ gulp.task('css', function () {
 		.pipe(prefixer()) // Добавим вендорные префиксы
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('build/css/'))
+		.pipe(browserSync.stream())
 		.pipe(cssmin({showLog: true}))
 		.pipe(rename({suffix: '.min', prefix : ''}))
-		.pipe(gulp.dest('build/css/'))
-		.pipe(browserSync.stream());
+		.pipe(gulp.dest('build/css/'));
 });
 /*head
 ===============================*/
@@ -91,10 +91,10 @@ gulp.task('head', function () {
 		.pipe(prefixer()) // Добавим вендорные префиксы
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('build/css/'))
+		.pipe(browserSync.stream())
 		.pipe(cssmin({showLog: true}))
 		.pipe(rename({suffix: '.min', prefix : ''}))
-		.pipe(gulp.dest('build/css/'))
-		.pipe(browserSync.stream());
+		.pipe(gulp.dest('build/css/'));
 });
 
 /*js
@@ -138,7 +138,7 @@ gulp.task('min', ['cleanmin','cssmin', 'jsmin']);
 /*libs
 ===============================*/
 gulp.task('libs', function(){
-	gulp.src('src/libs/{html5shiv/respond}*.*')
+	gulp.src('src/libs/{html5shiv/*.*,respond/*.*}')
 		.pipe(gulp.dest('build/libs/'))
 });
 
@@ -170,16 +170,10 @@ gulp.task('svg', function () {
 
 /*img
 ===============================*/
-gulp.task('img', ['svg'], function () {
+gulp.task('img', function () {
 	gulp.src('src/img/**/*.{jpg,png}') // Выберем наши картинки
-		.pipe(newer('build/img'))
-		.pipe(imagemin({
-			verbose: true,
-			interlaced: true,
-			progressive: true,
-			svgoPlugins: [{removeViewBox: false}],
-			use: [pngquant()]
-			}))
+		//.pipe(newer('build/img'))
+		//.pipe(imagemin())
 		.pipe(gulp.dest('build/img/'));
 	// Переместим в build
 });
@@ -222,9 +216,11 @@ gulp.task('build', [
 	'js',
 	'img',
 	'sprite',
-	'head',
 	'libs',
+  'head',
+  'libs',
 	'mail',
+	'head',
 	'fonts-less'
 ]);
 
@@ -233,7 +229,7 @@ gulp.task('build', [
 gulp.task('browser-sync', function () {
 
 	browserSync.init({
-		proxy: "jurdis/build",
+		proxy: "bargain/build",
 		notify: true
 	});
 });
