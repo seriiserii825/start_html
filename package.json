@@ -1,5 +1,5 @@
 {
-  "name": "jurdis",
+  "name": "yourhome",
   "version": "1.0.0",
   "description": "website",
   "main": "gulpfile.js",
@@ -36,5 +36,13 @@
   },
   "dependencies": {
     "gulp-file-include": "^1.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seriiserii825/YourHome.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seriiserii825/YourHome/issues"
+  },
+  "homepage": "https://github.com/seriiserii825/YourHome#readme"
 }

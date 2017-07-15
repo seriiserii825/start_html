@@ -16,7 +16,6 @@ var gulp = require('gulp'),
 	cssmin = require('gulp-cssmin'),
 	jsmin = require('gulp-jsmin'),
 	pngquant = require('imagemin-pngquant'),
-	fileinclude = require('gulp-file-include'),
 	svgmin = require('gulp-svgmin'),
 	cached = require('gulp-cached'),
 	filter    = require('gulp-filter'),
@@ -172,8 +171,8 @@ gulp.task('svg', function () {
 ===============================*/
 gulp.task('img', function () {
 	gulp.src('src/img/**/*.{jpg,png}') // Выберем наши картинки
-		//.pipe(newer('build/img'))
-		//.pipe(imagemin())
+		.pipe(newer('build/img'))
+		.pipe(imagemin())
 		.pipe(gulp.dest('build/img/'));
 	// Переместим в build
 });
@@ -217,8 +216,8 @@ gulp.task('build', [
 	'img',
 	'sprite',
 	'libs',
-  'head',
-  'libs',
+    'head',
+    'libs',
 	'mail',
 	'head',
 	'fonts-less'
@@ -229,27 +228,27 @@ gulp.task('build', [
 gulp.task('browser-sync', function () {
 
 	browserSync.init({
-		proxy: "bargain/build",
+		proxy: "yourhome/build",
 		notify: true
 	});
 });
-
-gulp.task('watch', function () {
-	gulp.watch('src/**/*.html', ['html']);
-	gulp.watch('src/less/{imports/,pages/}/*.less', ['css']);
-	gulp.watch('src/less/head_font/fonts.less', ['fonts-less']);
-	gulp.watch('src/less/head_font/head.less', ['head']);
-	gulp.watch('src/js/**/*.js', ['js']);
-	gulp.watch('src/fonts/**/*.*', ['fonts']);
-	gulp.watch('src/img/**/*.*', ['img']);
-	gulp.watch('src/img/icons/*.*', ['sprite']);
-	gulp.watch('src/fonts/**/*.*', ['fonts']);
-	gulp.watch('src/img/icons-svg/*.svg', ['svgsprite']);
-	gulp.watch('src/mail.php', ['mail']);
-});
-
-
 //     // Serve files from the root of this project
 gulp.task('default', ['build', 'browser-sync', 'watch']);
+
+
+
+gulp.task('watch', function () {
+    gulp.watch('src/**/*.html', ['html']);
+    gulp.watch('src/less/{imports/,pages/}/*.less', ['css']);
+    gulp.watch('src/less/head_font/fonts.less', ['fonts-less']);
+    gulp.watch('src/less/head_font/head.less', ['head']);
+    gulp.watch('src/js/**/*.js', ['js']);
+    gulp.watch('src/fonts/**/*.*', ['fonts']);
+    gulp.watch('src/img/**/*.*', ['img']);
+    gulp.watch('src/img/icons/*.*', ['sprite']);
+    gulp.watch('src/fonts/**/*.*', ['fonts']);
+    gulp.watch('src/img/icons-svg/*.svg', ['svgsprite']);
+    gulp.watch('src/mail.php', ['mail']);
+});
 //     // add browserSync.reload to the tasks array to make
 //     // all browsers reload after tasks are complete.
